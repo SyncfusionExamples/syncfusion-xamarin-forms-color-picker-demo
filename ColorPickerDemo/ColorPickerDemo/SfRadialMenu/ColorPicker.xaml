@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfradialmenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="ColorPickerDemo.SfRadialMenu.ColorPicker">
+  <ContentView.Content>
+        <sfradialmenu:SfRadialMenu CenterButtonRadius="30"
+                                   CenterButtonBackgroundColor="#383838"
+                                   RimColor="#FFCDCBCE" 
+                                   SelectionColor="Gray"
+                                   CenterButtonBorderColor="#ffffff"                          
+                                   CenterButtonTextColor="White" 
+                                   CenterButtonBackFontSize="18"
+                                   EnableCenterButtonAnimation="false"
+                                   IsDragEnabled="false"
+                                   RimRadius="75"
+                                   AnimationDuration="300"
+                                   SeparatorThickness="1">
+            <sfradialmenu:SfRadialMenu.Items>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#FF0000">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF0000" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF1E1E" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF3C3C" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF5A5A" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF7878" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF9696" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFB4B4" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFD2D2" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFF0F0" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#FFFF00">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFF00" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFF1E" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFF3C" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFF5A" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFF78" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFFB4" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFFD2" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFFFF0" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#00FF00">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#00FF00" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#1EFF1E" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#3CFF3C" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#78FF78" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#96FF96" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#B4FFB4" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#D2FFD2" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#F0FFF0" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#00FFFF">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#00FFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#1EFFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#3CFFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#78FFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#96FFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#B4FFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#D2FFFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#F0FFFF" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#0000FF">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#0000FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#1E1EFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#3C3CFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#7878FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#9696FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#B4B4FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#D2D2FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#F0F0FF" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+                <sfradialmenu:SfRadialMenuItem BackgroundColor="#FF00FF">
+                    <sfradialmenu:SfRadialMenuItem.Items>
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF00FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF1EFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF3CFF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF78FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FF96FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFB4FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFD2FF" />
+                        <sfradialmenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" BackgroundColor="#FFF0FF" />
+                    </sfradialmenu:SfRadialMenuItem.Items>
+                </sfradialmenu:SfRadialMenuItem>
+            </sfradialmenu:SfRadialMenu.Items>
+        </sfradialmenu:SfRadialMenu>
+    </ContentView.Content>
+</ContentView>

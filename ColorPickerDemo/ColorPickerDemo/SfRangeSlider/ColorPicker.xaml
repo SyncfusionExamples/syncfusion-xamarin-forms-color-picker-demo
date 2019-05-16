@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfrangeslider="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+             x:Class="ColorPickerDemo.SfRangeSlider.ColorPicker">
+    <ContentView.Resources>
+        <Style TargetType="sfrangeslider:SfRangeSlider">
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="ShowValueLabel" Value="False"/>
+            <Setter Property="ShowRange" Value="False"/>
+            <Setter Property="TrackSelectionThickness" Value="2"/>
+            <Setter Property="TrackThickness" Value="1"/>
+            <Setter Property="TickFrequency" Value="255"/>
+            <Setter Property="StepFrequency" Value="1"/>
+            <Setter Property="TickPlacement" Value="None"/>
+            <Setter Property="ThumbSize" Value="20"/>
+            <Setter Property="Minimum" Value="0"/>
+            <Setter Property="Maximum" Value="255"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+    </ContentView.Resources>
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="{Binding SelectedColor}"/>
+            <Grid Grid.Row="1" Margin="15,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="R" FontSize="20"/>
+                        <sfrangeslider:SfRangeSlider Grid.Column="1"
+                                                 Value="{Binding RValue, Mode=TwoWay}"
+                                             TrackColor="#77FF0000"
+                                             KnobColor="#FFFF0000"
+                                             TrackSelectionColor="#CCFF0000"/>
+                        <Label Text="{Binding RValue}" 
+                           Grid.Column="2"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="G"/>
+                        <sfrangeslider:SfRangeSlider Grid.Column="1"
+                                                 Value="{Binding GValue, Mode=TwoWay}"
+                                        
+                                                 TrackColor="#7700FF00"
+                                             KnobColor="#FF00FF00"
+                                             TrackSelectionColor="#CC00FF00"/>
+                        <Label Text="{Binding GValue}" 
+                           Grid.Column="2"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="B"/>
+                        <sfrangeslider:SfRangeSlider Grid.Column="1"
+                                                 Value="{Binding BValue, Mode=TwoWay}"
+                                                 
+                                             TrackColor="#770000FF"
+                                             KnobColor="#FF0000FF"
+                                             TrackSelectionColor="#CC0000FF"/>
+                        <Label Text="{Binding BValue}" 
+                           Grid.Column="2"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

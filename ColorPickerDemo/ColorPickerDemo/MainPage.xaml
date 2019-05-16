@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ColorPickerDemo"
+             xmlns:chips="clr-namespace:ColorPickerDemo.SfChips"
+             xmlns:rangeslider="clr-namespace:ColorPickerDemo.SfRangeSlider"
+             xmlns:radialmenu="clr-namespace:ColorPickerDemo.SfRadialMenu"
+             xmlns:picker="clr-namespace:ColorPickerDemo.SfPicker"
+             xmlns:segmentedcontrol="clr-namespace:ColorPickerDemo.SfSementedControl"
+             xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="ColorPickerDemo.MainPage">
+    <tabview:SfTabView VisibleHeaderCount="3">
+        <tabview:SfTabItem Title="Chips">
+            <tabview:SfTabItem.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <border:SfBorder HeightRequest="150"
+                                     WidthRequest="150"
+                                     BackgroundColor="{Binding Source={x:Reference chipscolorpicker}, Path=SelectedColor}"
+                                     CornerRadius="75"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"/>
+                    <ScrollView Grid.Row="1">
+                        <chips:ColorPicker x:Name="chipscolorpicker"/>
+                    </ScrollView>
+                </Grid>
+            </tabview:SfTabItem.Content>
+        </tabview:SfTabItem>
+        <tabview:SfTabItem Title="Picker">
+            <tabview:SfTabItem.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <border:SfBorder HeightRequest="150"
+                                     WidthRequest="150"
+                                     CornerRadius="75"
+                                     VerticalOptions="Center"
+                                     BackgroundColor="{Binding Source={x:Reference pickercolorpicker}, Path=SelectedColor}"
+                                     HorizontalOptions="Center"/>
+                    <ScrollView Grid.Row="1">
+                        <picker:ColorPicker x:Name="pickercolorpicker" 
+                                            WidthRequest="500" 
+                                            HeightRequest="200"/>
+                    </ScrollView>
+                </Grid>
+            </tabview:SfTabItem.Content>
+        </tabview:SfTabItem>
+        <tabview:SfTabItem Title="Radial Menu">
+            <tabview:SfTabItem.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <border:SfBorder HeightRequest="150"
+                                     WidthRequest="150"
+                                     CornerRadius="75"
+                                     VerticalOptions="Center"
+                                     BackgroundColor="{Binding Source={x:Reference radialmenucolorpicker}, Path=SelectedColor}"
+                                     HorizontalOptions="Center"/>
+                    <ScrollView Grid.Row="1">
+                        <radialmenu:ColorPicker x:Name="radialmenucolorpicker" 
+                                                HeightRequest="300" />
+                    </ScrollView>
+                </Grid>
+            </tabview:SfTabItem.Content>
+        </tabview:SfTabItem>
+        <tabview:SfTabItem Title="Range Slider">
+            <tabview:SfTabItem.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <border:SfBorder HeightRequest="150"
+                                     WidthRequest="150"
+                                     CornerRadius="75"
+                                     VerticalOptions="Center"
+                                     BackgroundColor="{Binding Source={x:Reference radialslidercolorpicker}, Path=SelectedColor}"
+                                     HorizontalOptions="Center"/>
+                    <ScrollView Grid.Row="1">
+                        <rangeslider:ColorPicker x:Name="radialslidercolorpicker" 
+                                                 HeightRequest="300" />
+                    </ScrollView>
+                </Grid>
+            </tabview:SfTabItem.Content>
+        </tabview:SfTabItem>
+        <tabview:SfTabItem Title="Segmented Control">
+            <tabview:SfTabItem.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <border:SfBorder HeightRequest="150"
+                                     WidthRequest="150"
+                                     CornerRadius="75"
+                                     VerticalOptions="Center"
+                                     BackgroundColor="{Binding Source={x:Reference segmentedcontrolcolorpicker}, Path=SelectedColor}"
+                                     HorizontalOptions="Center"/>
+                    <ScrollView Grid.Row="1">
+                        <segmentedcontrol:ColorPicker x:Name="segmentedcontrolcolorpicker" 
+                                                      HeightRequest="50" />
+                    </ScrollView>
+                </Grid>
+            </tabview:SfTabItem.Content>
+        </tabview:SfTabItem>
+    </tabview:SfTabView>
+</ContentPage>
